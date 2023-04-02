@@ -1,0 +1,18 @@
+{
+    "name": "LutLight2D.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:687c4d5b4762db04cafc7a87733fbd47"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
