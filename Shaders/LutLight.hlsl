@@ -120,19 +120,10 @@ void lut_pix_smooth_float(in float3 col, in float lum, out float4 result)
     result = lutColor;
 }
 
-/*void uv_snap_float(in float2 uv, in float texel, out float2 result)
-{
-    // from uv to world, snap to texels, back to uv
-    float2 world = (uv - .5) * unity_OrthoParams.xy + _WorldSpaceCameraPos.xy;
-    world  = world - world % texel;
-    result = (world - _WorldSpaceCameraPos.xy) / unity_OrthoParams.xy + .5;
-}*/
-
-
 void uv_screen_float(in float3 world, out float2 result)
 {
     // from uv to world, snap to texels, back to uv
-    float3 screen = mul(UNITY_MATRIX_MVP, float4(world, 1)).xyw;
+    float3 screen = mul(UNITY_MATRIX_VP, float4(world, 1)).xyw;
     screen.y *= _ProjectionParams.x;
     result = screen.xy / screen.z  * 0.5 + 0.5;
 }
@@ -140,7 +131,7 @@ void uv_screen_float(in float3 world, out float2 result)
 void uv_snap_float(in float3 world, in float texel, out float2 result)
 {
     // from uv to world, snap to texels, back to uv
-    float3 screen = mul(UNITY_MATRIX_MVP, float4(world - world % texel, 1)).xyw;
+    float3 screen = mul(UNITY_MATRIX_VP, float4(world - world % texel, 1)).xyw;
     screen.y *= _ProjectionParams.x;
     result = screen.xy / screen.z  * 0.5 + 0.5;
 }
