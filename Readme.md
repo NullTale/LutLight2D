@@ -27,7 +27,7 @@ like it is done in most pixel art palettes.
 <sup>[Fantasy 24](https://lospec.com/palette-list/fantasy-24) palette from [Gabriel C](https://twitter.com/_universs) </sup> <br>
 <img src="https://user-images.githubusercontent.com/1497430/229498868-01bfcdb4-0ca4-40c8-a186-2b3af9366f1b.png" width="600"><br>
 
-The shader does this using a set of [Lut](https://lettier.github.io/3d-game-shaders-for-beginners/lookup-table.html) tables generated from gradient ramps.
+The shader does this using a set of [Lut](https://lettier.github.io/3d-game-shaders-for-beginners/lookup-table.html) tables generated from color ramps.
 
 ![LutTables](https://user-images.githubusercontent.com/1497430/229542912-c903c884-b08d-4772-bbee-3d2bd5a323aa.png)<br>
 <sup>The color for replacement is taken from the tables depending on the brightness from the lighting texture.</sup>
@@ -48,7 +48,7 @@ First needed to create the `LutLight2D Asset`, it will generate a texture with a
 
 <img src="https://user-images.githubusercontent.com/1497430/229541874-3e9ebf82-ef78-4597-bf94-60e731550475.png" width="600"><br>
 
-It will create material and Grayscale Ramps to it, which should already be enough to apply material.
+It will create a material and Grayscale Ramps for it, which should already be enough to apply the material.
 
 <img src="https://user-images.githubusercontent.com/1497430/229521544-3bec1376-7c8f-4bb4-809d-ab106f638af5.png" width="600"><br>
 
