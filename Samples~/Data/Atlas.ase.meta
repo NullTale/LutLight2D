@@ -1,0 +1,72 @@
+fileFormatVersion: 2
+guid: 5b7da2a465e13774888d18cf7ffff025
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: d1956ce1ff810451f9738b29e9df561a, type: 3}
+  settings:
+    importType: 0
+    transparencyMode: 0
+    transparentColor: {r: 1, g: 0, b: 1, a: 1}
+    pixelsPerUnit: 16
+    spriteAlignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    generateAnimations: 1
+    createAnimationAssets: 0
+    bindType: 0
+    animType: 0
+    baseAnimator: {instanceID: 0}
+    buildAtlas: 0
+    tileSize: {x: 16, y: 16}
+    tileNameType: 0
+    tileEmpty: 0
+  textureImporterSettings:
+    seamlessCubemap: 0
+    mipmapBias: 0.5
+    wrapMode: 1
+    wrapModeU: 0
+    wrapModeV: 0
+    wrapModeW: 0
+    alphaIsTransparency: 1
+    spriteMode: 1
+    spritePixelsPerUnit: 100
+    spriteTessellationDetail: 0
+    spriteExtrude: 1
+    spriteMeshType: 1
+    spriteAlignment: 0
+    spritePivot: {x: 0, y: 0}
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 1
+    aniso: 1
+    filterMode: 0
+    cubemapConvolution: 0
+    textureType: 8
+    textureShape: 1
+    mipmapFilter: 0
+    mipmapEnabled: 0
+    sRGBTexture: 1
+    fadeOut: 0
+    borderMipmap: 0
+    mipMapsPreserveCoverage: 0
+    mipmapFadeDistanceStart: 1
+    alphaTestReferenceValue: 1
+    convertToNormalMap: 0
+    heightmapScale: 0
+    normalMapFilter: 0
+    alphaSource: 1
+    singleChannelComponent: 0
+    readable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    npotScale: 0
+    generateCubemap: 0
+    mipmapFadeDistanceEnd: 3
+  animationSettings: []
+  texture: {instanceID: 0}
+  spriteImportData: []
+  spriteRects: []
+  selectedImporter: 0

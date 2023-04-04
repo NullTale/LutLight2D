@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfe9a439533f4ce43a23e401f72a5576, type: 3}
+  m_Name: OIL6
+  m_EditorClassIdentifier: 
+  _ramps: {fileID: 2800000, guid: 492d32888bd482d4e87055c941878031, type: 3}
+  _indexed: 1
+  _material:
+    enabled: 1
+    value: {fileID: 2100000, guid: 16184804acf80d14e9a2b44199d41856, type: 2}
+  _lutSize: 0
+  _rampsDepth:
+    enabled: 1
+    value: 6
+  _rampsCount:
+    enabled: 1
+    value: 10
+  _wet: 1
+  _gamma: 0
+  _blur:
+    enabled: 0
+    value: 1
+  _saveIndexedLut: 1
+  _gradsPath: Assets/Samples/Scenes/OIL6/UIL6 Ramps.png
+  _lut: {fileID: 2800000, guid: 50ab1de27dbef8942ac4a6b73dc76b44, type: 3}
+  _lutIndexed: {fileID: 0}
+  _lutGenerated: {fileID: 2800000, guid: ae8d81ae9a1c45c4cac30b98775b077d, type: 3}
+  _gradsLink: {fileID: 2800000, guid: 492d32888bd482d4e87055c941878031, type: 3}

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfe9a439533f4ce43a23e401f72a5576, type: 3}
+  m_Name: Lospec500
+  m_EditorClassIdentifier: 
+  _ramps: {fileID: 2800000, guid: 5bd44330a3a7147409efc0226d8af64a, type: 3}
+  _indexed: 0
+  _material:
+    enabled: 1
+    value: {fileID: 2100000, guid: 7e852de51e729d94fb8059f0c4c400ca, type: 2}
+  _lutSize: 0
+  _rampsDepth:
+    enabled: 1
+    value: 7
+  _rampsCount:
+    enabled: 1
+    value: 50
+  _wet: 1
+  _gamma: 0
+  _blur:
+    enabled: 0
+    value: 1
+  _saveIndexedLut: 1
+  _gradsPath: Assets/Samples/Scenes/Lospec500/Lospec500 Ramps.png
+  _lut: {fileID: 2800000, guid: 50ab1de27dbef8942ac4a6b73dc76b44, type: 3}
+  _lutIndexed: {fileID: 0}
+  _lutGenerated: {fileID: 2800000, guid: a745650c245c5f74f876bca16280b31f, type: 3}
+  _gradsLink: {fileID: 2800000, guid: 5bd44330a3a7147409efc0226d8af64a, type: 3}

@@ -13,5 +13,12 @@
   },
   "dependencies": {
   },
-  "hideInEditor": false
+  "hideInEditor": false,
+  "samples": [
+      {
+          "displayName": "Samples",
+          "description": "Contains sample scenes with different applications",
+          "path": "Samples~/"
+      }
+  ]
 }
