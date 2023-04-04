@@ -55,7 +55,7 @@ It will create a material and Grayscale Ramps for it, which should already be en
 Next step is to set the gradient table for each color from the palette.<br>
 After the gradients are set, need to press the Bake button to apply the result if it was not done automatically.
 > The Ramps file is a common .png which contains shading gradient for each color from the palette, starting from the original, lightest, to the darkest color.
-> Colors also can alpha chanel.
+> Colors also can have alpha channel.
 
 <sup>Result with the character sprite in the [lospec500](https://lospec.com/palette-list/lospec500) palette.</sup><br>
 <img src="https://user-images.githubusercontent.com/1497430/229498871-8c0615b5-bea2-4158-b7e5-e2f42f903441.png" width="600"><br>
