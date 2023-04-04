@@ -6,19 +6,19 @@ It keeps the original colors of the palette and can create unusual stylization e
 
 ![LutLight_Compare](https://user-images.githubusercontent.com/1497430/229509448-da8a1939-4371-4938-8e6c-642c95c71697.gif)
 
-### Examples
+## Examples
 
-<sub>In shadow visible objects [Lospec500](https://lospec.com/palette-list/lospec500)</sub><br>
-![LutLight_Example_A](https://user-images.githubusercontent.com/1497430/229535181-3bdb4d3b-e157-4946-8748-9f64511265da.gif)
+<sub>Sharp gradient shading [Fantasy 24](https://lospec.com/palette-list/fantasy-24)</sub><br>
+![LutLight_Example_C](https://user-images.githubusercontent.com/1497430/229741062-c004c67c-6d4f-4870-9550-5565235c2924.gif)
 
 <sub>Pattern shading [Oil6](https://lospec.com/palette-list/oil-6)</sub><br>
-![LutLight_Example_B](https://user-images.githubusercontent.com/1497430/229535216-328d89e1-ddda-4dd5-8ad6-f49eb8177315.gif)
+![LutLight_Example_B](https://user-images.githubusercontent.com/1497430/229741056-ee26e56c-57c0-42fe-89e5-db16ba03ff0e.gif)
 
-<sub>Just sharp gradient shading [Fantasy 24](https://lospec.com/palette-list/fantasy-24)</sub><br>
-![LutLight_Example_C](https://user-images.githubusercontent.com/1497430/229535227-e373449a-e778-4823-8ebf-f5b0f80176d9.gif)
+<sub>In shadow visible objects [Lospec500](https://lospec.com/palette-list/lospec500)</sub><br>
+![LutLight_Example_A](https://user-images.githubusercontent.com/1497430/229741049-6afbb859-b664-4bc1-bf3f-9fc4ec8bb121.gif)
 
 <sub>In shadow outline [FUZZYFOUR](https://lospec.com/palette-list/fuzzyfour)</sub><br>
-![LutLight_Example_D](https://user-images.githubusercontent.com/1497430/229535237-265e34a3-447e-44b2-abbb-ec59f7f12861.gif)
+![LutLight_Example_D](https://user-images.githubusercontent.com/1497430/229741007-9052d285-5bcf-4a07-8e24-f1fbef4aea79.gif)
 
 ## How it works
 The general idea is to make each color have its own shading gradient defined manually<br>
