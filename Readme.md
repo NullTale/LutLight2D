@@ -3,6 +3,8 @@
 Stylized pixel art lighting shader for Unity2D using a color replacement technique.<br>
 It keeps the original colors of the palette and can create unusual stylization effects.
 
+Tested with Unity 2021, 2022, uses Urp 2D Renderer and Shader Graph.
+
 <img src="https://user-images.githubusercontent.com/1497430/229509448-da8a1939-4371-4938-8e6c-642c95c71697.gif" width="600"><br>
 
 ## Examples
