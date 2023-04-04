@@ -2495,7 +2495,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1871473476804185656, guid: 6e2ba55873c55444f91f55a42efba849, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 687.4
+      value: 732.9
       objectReference: {fileID: 0}
     - target: {fileID: 1871473476804185656, guid: 6e2ba55873c55444f91f55a42efba849, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2594,14 +2594,15 @@ PrefabInstance:
 
         Color ramps respond differently
         to lighting, giving the same color at high light and shading at different
-        speeds. Thus creates pattern effect in the shadows.</size>
+        speeds. Thus creates pattern effect in the shadows. Tree lighten with offset
+        taken from Z coord.</size>
 
 
-        Art
-        by @MateCziner
+        Art by @MateCziner
 
 
-        <size=24>Color ramps</size>'
+        <size=24>Color
+        ramps</size>'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

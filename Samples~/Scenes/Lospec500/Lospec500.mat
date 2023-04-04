@@ -83,5 +83,6 @@ Material:
     - _TEXEL: 0
     - _Texel: 1
     - _Texel_Size: 0.03
+    - _Z_OFFSET: 0
     m_Colors: []
   m_BuildTextureStacks: []
