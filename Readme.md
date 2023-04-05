@@ -39,10 +39,13 @@ By specify color ramps and using material options, effects as in the [examples](
 
 ## Installation and use
 
-Install via PackageManager `https://github.com/NullTale/LutLight2D.git` <br>
+The Shader uses the lighting texture from the `Urp 2D Renderer` so `Urp Asset` must be configured.
+
+Install via PackageManager `https://github.com/NullTale/LutLight2D.git`
+
 <img src="https://user-images.githubusercontent.com/1497430/213906801-7cab3334-5626-46b8-9966-d5c0b6107edc.png">
 
-> The Shader uses the lighting texture from the `Urp 2D Renderer` so `Urp Asset` must be configured.
+
 
 First needed to create the `LutLight2D Asset`, it will generate a texture with a set of lut tables for the material.
 
