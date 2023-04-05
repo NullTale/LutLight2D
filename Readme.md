@@ -62,6 +62,6 @@ After the gradients are set, need to press the Bake button to apply the result i
 > Colors also can have alpha channel.
 
 With these ramps, the character is shaded black from the palette, and his light areas like eyes and face are visible in the shadows.<br>
-By changing the shading ramps, unusual materials can be that are only visible in shadow or light, as in the [example](#elospec500) for the lospec500 palette.<br>
-> Examples with other applications can be found in the package samples.
+By changing the Color Ramps, unusual materials can be made, that are only visible in shadow or light, as in the [example](#elospec500) for the lospec500 palette.<br>
 
+> Examples with other applications can be found in the package samples.
