@@ -64,7 +64,7 @@ After the gradients are set, need to press the Bake button to apply the result i
 > The Ramps file is a common .png which contains shading gradient for each color from the palette, starting from the original, lightest, to the darkest.<br>
 > Colors also can have alpha channel.
 
-With these ramps, the character is shaded black from the palette, and his light areas like eyes and face are visible in the shadows.<br>
-By changing the Color Ramps, unusual materials can be made, that are only visible in shadow or light, as in the [example](#elospec500) for the lospec500 palette.<br>
+Now the character shaded with black color from the palette, and his light areas like eyes and face are visible in the shadows.<br>
+By changing the Color Ramps, unusual materials can be made that are only visible in shadow or light, as in the [example](#elospec500) for the lospec500 palette.<br>
 
 > Examples with other applications can be found in the package samples.
