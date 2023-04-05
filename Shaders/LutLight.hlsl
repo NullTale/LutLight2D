@@ -1,10 +1,6 @@
 #ifndef LUT_LIGHT_INCLUDED
 #define LUT_LIGHT_INCLUDED
 
-//#include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl"
-//#include "Packages/com.unity.render-pipelines.universal/Shaders/Utils/Fullscreen.hlsl"
-//#include "Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/Common.hlsl"
-
 SamplerState _point_clamp_sampler;
 
 real3 GetLinearToSRGB(real3 c)
@@ -24,34 +20,6 @@ real3 GetSRGBToLinear(real3 c)
     return SRGBToLinear(c);
 #endif
 }
-
-/*real3 FastLinearToSRGB(real3 c)
-{
-    return saturate(1.055 * PositivePow(c, 0.416666667) - 0.055);
-}
-real3 LinearToSRGB(real3 c)
-{
-    real3 sRGBLo = c * 12.92;
-    real3 sRGBHi = (PositivePow(c, real3(1.0/2.4, 1.0/2.4, 1.0/2.4)) * 1.055) - 0.055;
-    real3 sRGB   = (c <= 0.0031308) ? sRGBLo : sRGBHi;
-    return sRGB;
-}
-real3 FastSRGBToLinear(real3 c)
-{
-    return c * (c * (c * 0.305306011 + 0.682171111) + 0.012522878);
-}
-real3 SRGBToLinear(real3 c)
-{
-#if defined(UNITY_COLORSPACE_GAMMA) && REAL_IS_HALF
-    c = min(c, 100.0); // Make sure not to exceed HALF_MAX after the pow() below
-#endif
-    real3 linearRGBLo  = c / 12.92;
-    real3 linearRGBHi  = PositivePow((c + 0.055) / 1.055, real3(2.4, 2.4, 2.4));
-    real3 linearRGB    = (c <= 0.04045) ? linearRGBLo : linearRGBHi;
-    return linearRGB;
-}*/
-//#if defined(UNITY_COLORSPACE_GAMMA)
-//#define GRADES 7.
 
 #if defined(_LUT_SIZE_X16)
 #define LUT_SIZE 16.
@@ -78,6 +46,7 @@ void lut_pix_float(in float3 col, in float lum, out float4 result)
     
     float2 uv;
     
+    // get replacement color from the lut tables set
     uv.y = (uvw.y * (LUT_SIZE_MINUS / LUT_SIZE) + .5 * (1. / LUT_SIZE)) * (1. / _Grades) + floor(lum * _Grades) / _Grades;
     uv.x = uvw.x * (LUT_SIZE_MINUS / (LUT_SIZE * LUT_SIZE)) + .5 * (1. / (LUT_SIZE * LUT_SIZE)) + floor(uvw.z * LUT_SIZE) / LUT_SIZE;
 
@@ -100,7 +69,8 @@ void lut_pix_smooth_float(in float3 col, in float lum, out float4 result)
 #endif
     
     float2 uv;
-    
+
+    // blended lut interpolation from the lut tables set
     uv.y = (uvw.y * (LUT_SIZE_MINUS / LUT_SIZE) + .5 * (1. / LUT_SIZE)) * (1. / _Grades) + floor(lum * _Grades) / _Grades;
     uv.x = uvw.x * (LUT_SIZE_MINUS / (LUT_SIZE * LUT_SIZE)) + .5 * (1. / (LUT_SIZE * LUT_SIZE)) + floor(uvw.z * LUT_SIZE) / LUT_SIZE;
 
@@ -122,7 +92,7 @@ void lut_pix_smooth_float(in float3 col, in float lum, out float4 result)
 
 void uv_screen_float(in float3 world, out float2 result)
 {
-    // from uv to world, snap to texels, back to uv
+    // uv screen from world, to make lighting with an offset from the z position
     float3 screen = mul(UNITY_MATRIX_VP, float4(world, 1)).xyw;
     screen.y *= _ProjectionParams.x;
     result = screen.xy / screen.z  * 0.5 + 0.5;
@@ -130,7 +100,7 @@ void uv_screen_float(in float3 world, out float2 result)
 
 void uv_snap_float(in float3 world, in float texel, out float2 result)
 {
-    // from uv to world, snap to texels, back to uv
+    // uv screen from world, but pixelated
     float3 screen = mul(UNITY_MATRIX_VP, float4(world - world % texel, 1)).xyw;
     screen.y *= _ProjectionParams.x;
     result = screen.xy / screen.z  * 0.5 + 0.5;
@@ -138,14 +108,6 @@ void uv_snap_float(in float3 world, in float texel, out float2 result)
 
 void lum_float(in float3 col, out float val)
 {
-    //col = GetSRGBToLinear(col);
-    // https://en.wikipedia.org/wiki/Grayscale
-    //float3 gray = col * float3(0.299, 0.587, 0.114);        // rec601
-    //float3 gray = sqrt( 0.299*col.r*col.r + 0.587*col.g*col.g + 0.114*col.b*col.b );
-    //float3 gray = col * float3(0.2126, 0.7152, 0.0722);
-    //float3 gray = col * float3(0.333, 0.333, 0.333);
-    //lum = gray.x + gray.y + gray.z;
-    //lum = col;
     val = Luminance(col);
 }
 
