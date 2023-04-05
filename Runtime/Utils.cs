@@ -45,9 +45,6 @@ namespace LutLight2D
 
         public static Texture2D Copy(this Texture2D texture, GraphicsFormat format)
         {
-            /*if (texture.isReadable == false)
-                return texture.Rescale(texture.width, texture.height);*/
-            
             var dst = new Texture2D(texture.width, texture.height, texture.graphicsFormat, 0, TextureCreationFlags.None);
             dst.filterMode = texture.filterMode;
             dst.wrapMode   = texture.wrapMode;
@@ -99,23 +96,6 @@ namespace LutLight2D
             }
 
             return dst;
-        }
-        
-        public static Texture2D Rescale(this Texture2D texture, int width, int height)
-        {
-            var rt = new RenderTexture(width, height, GraphicsFormat.R8G8B8A8_SRGB, GraphicsFormat.None);
-            RenderTexture.active = rt;
-            Graphics.Blit(texture, rt);
-            var result = new Texture2D(width, height, texture.format, texture.mipmapCount > 0);
-            result.filterMode = texture.filterMode;
-            result.wrapMode   = texture.wrapMode;
-            result.ReadPixels(new Rect(0, 0, width, height), 0, 0);
-            result.Apply();
-            
-            RenderTexture.active = null;
-            rt.Release();
-            
-            return result;
         }
         
         public static T Next<T>(this IEnumerator<T> enumerator)
