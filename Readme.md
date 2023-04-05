@@ -3,6 +3,8 @@
 Stylized pixel art lighting shader for Unity2D using a color replacement technique.<br>
 It keeps the original colors of the palette and can create unusual stylization effects.
 
+Tested with Unity 2021, 2022, uses Urp 2D Renderer and Shader Graph.
+
 <img src="https://user-images.githubusercontent.com/1497430/229509448-da8a1939-4371-4938-8e6c-642c95c71697.gif" width="600"><br>
 
 ## Examples
@@ -12,7 +14,7 @@ It keeps the original colors of the palette and can create unusual stylization e
 
 <sub>Sharp gradient shading [Fantasy 24](https://lospec.com/palette-list/fantasy-24)</sub><br>
 <img src="https://user-images.githubusercontent.com/1497430/229741062-c004c67c-6d4f-4870-9550-5565235c2924.gif" width="600"><br>
-
+ <a name="elospec500"></a>
 <sub>In shadow visible objects [Lospec500](https://lospec.com/palette-list/lospec500)</sub><br>
 <img src="https://user-images.githubusercontent.com/1497430/229741049-6afbb859-b664-4bc1-bf3f-9fc4ec8bb121.gif" width="600"><br>
 
@@ -51,10 +53,15 @@ It will create a material and Grayscale Ramps for it, which should already be en
 <img src="https://user-images.githubusercontent.com/1497430/229521544-3bec1376-7c8f-4bb4-809d-ab106f638af5.png" width="600"><br>
 
 Next step is to set the gradient table for each color from the palette.<br>
-After the gradients are set, need to press the Bake button to apply the result if it was not done automatically.
-> The Ramps file is a common .png which contains shading gradient for each color from the palette, starting from the original, lightest, to the darkest color.
-> Colors also can alpha chanel.
+After the gradients are set, need to press the Bake button to apply the result if it was not done automatically.<br>
 
 <sup>Result with the character sprite in the [lospec500](https://lospec.com/palette-list/lospec500) palette.</sup><br>
-<img src="https://user-images.githubusercontent.com/1497430/229498871-8c0615b5-bea2-4158-b7e5-e2f42f903441.png" width="600"><br>
+<img src="https://user-images.githubusercontent.com/1497430/230003982-d3a49fcd-8b62-44d3-b6b8-feb16b60d7d7.png" width="600"><br>
+
+> The Ramps file is a common .png which contains shading gradient for each color from the palette, starting from the original, lightest, to the darkest.<br>
+> Colors also can have alpha channel.
+
+With these ramps, the character is shaded black from the palette, and his light areas like eyes and face are visible in the shadows.<br>
+By changing the shading ramps, unusual materials can be that are only visible in shadow or light, as in the [example](#elospec500) for the lospec500 palette.<br>
+> Examples with other applications can be found in the package samples.
 
