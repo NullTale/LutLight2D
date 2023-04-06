@@ -422,6 +422,7 @@ namespace LutLight2D
             importer.sRGBTexture         = false;
             importer.isReadable          = readable;
             importer.mipmapEnabled       = false;
+            importer.npotScale           = UnityEditor.TextureImporterNPOTScale.None;
             
             var texset = importer.GetDefaultPlatformTextureSettings();
             texset.format              = UnityEditor.TextureImporterFormat.RGBA32;
