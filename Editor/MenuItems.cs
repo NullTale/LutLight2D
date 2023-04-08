@@ -35,8 +35,8 @@ namespace LutLight2D.Editor
                 var gradsClean = new Texture2D(7, 7);
                 for (var x = 0; x < gradsClean.width; x++)
                 for (var y = 0; y < gradsClean.height; y++)
-                    gradsClean.SetPixel(x, y, Color.HSVToRGB(x / (float)gradsClean.width, 0f, (y + 3 - x) / (float)gradsClean.height));
-                
+                    gradsClean.SetPixel(x, y, Color.HSVToRGB(x / (float)gradsClean.width, 0f, (y + 3 - x) / (float)(gradsClean.height + 2)));
+
                 gradsClean.Apply();
                 
                 File.WriteAllBytes(gradsPath, gradsClean.EncodeToPNG());
