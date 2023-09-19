@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 
+// LutLight2D © NullTale - https://twitter.com/NullTale/
 namespace LutLight2D
 {
     [Serializable]

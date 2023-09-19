@@ -1,7 +1,7 @@
-using System;
 using UnityEditor;
 using UnityEngine;
 
+// LutLight2D © NullTale - https://twitter.com/NullTale/
 namespace LutLight2D
 {
     [CustomPropertyDrawer(typeof(Optional<>))]

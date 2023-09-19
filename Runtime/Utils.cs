@@ -4,6 +4,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering;
 
+// LutLight2D © NullTale - https://twitter.com/NullTale/
 namespace LutLight2D
 {
     internal static class Utils
