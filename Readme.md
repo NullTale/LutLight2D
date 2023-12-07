@@ -1,5 +1,8 @@
 # LutLight2D
 
+[![Twitter](https://img.shields.io/badge/Follow-Twitter?logo=twitter&color=white)](https://twitter.com/NullTale)
+[![Boosty](https://img.shields.io/badge/Support-Boosty?logo=boosty&color=white)](https://boosty.to/nulltale)
+
 Stylized pixel art lighting shader for Unity2D using a color replacement technique.<br>
 It keeps the original colors of the palette and can create unusual stylization effects.
 
