@@ -1,14 +1,16 @@
 # LutLight2D
 
 [![Twitter](https://img.shields.io/badge/Follow-Twitter?logo=twitter&color=white)](https://twitter.com/NullTale)
+[![Discord](https://img.shields.io/badge/Discord-Discord?logo=discord&color=white)](https://discord.gg/CkdQvtA5un)
 [![Boosty](https://img.shields.io/badge/Support-Boosty?logo=boosty&color=white)](https://boosty.to/nulltale)
 
-Stylized pixel art lighting shader for Unity2D using a color replacement technique.<br>
+Stylized pixel art lighting via color replacement.<br>
 It keeps the original colors of the palette and can create unusual stylization effects.
 
 Tested with Unity 2021, 2022, uses Urp 2D Renderer and Shader Graph.
  
 [![Asset Store](https://img.shields.io/badge/Asset%20Store-asd?logo=Unity&color=red)](https://assetstore.unity.com/packages/tools/particles-effects/lutlight2d-267033)
+[![Forum](https://img.shields.io/badge/Forum-asd?logo=ChatBot&color=blue)](https://forum.unity.com/threads/released-free-lutlight2d-new-approach-for-pixel-art-lighting-via-color-replacement.1542449/)
 
 <img src="https://user-images.githubusercontent.com/1497430/229509448-da8a1939-4371-4938-8e6c-642c95c71697.gif" width="600"><br>
 
