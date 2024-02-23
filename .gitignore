@@ -72,3 +72,6 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 Samples.meta
 Samples
+package.json
+Readme.pdf
+Readme.pdf.meta
