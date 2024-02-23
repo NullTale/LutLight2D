@@ -165,11 +165,78 @@
         },
         {
             "m_Id": "d42b0102267a4d0590468dd34fe904df"
+        },
+        {
+            "m_Id": "02a0b0e5cdfd4393aa1eb66d77c5003f"
         }
     ],
-    "m_GroupDatas": [],
-    "m_StickyNoteDatas": [],
+    "m_GroupDatas": [
+        {
+            "m_Id": "340996a9b62348b9bc0f64eced5bb157"
+        }
+    ],
+    "m_StickyNoteDatas": [
+        {
+            "m_Id": "ea600296d5554286a88c346071d4bd08"
+        }
+    ],
     "m_Edges": [
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "02a0b0e5cdfd4393aa1eb66d77c5003f"
+                },
+                "m_SlotId": 1
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "49a71bd8477f463499013e2a5836f709"
+                },
+                "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "02a0b0e5cdfd4393aa1eb66d77c5003f"
+                },
+                "m_SlotId": 1
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "7e409f490fe64bd08da3cd49cab24d2d"
+                },
+                "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "02a0b0e5cdfd4393aa1eb66d77c5003f"
+                },
+                "m_SlotId": 1
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "a3ae46735644488e8659252b93f5ef52"
+                },
+                "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "02a0b0e5cdfd4393aa1eb66d77c5003f"
+                },
+                "m_SlotId": 1
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "ed27f8779d174d6585fd93d9f62287ff"
+                },
+                "m_SlotId": 0
+            }
+        },
         {
             "m_OutputSlot": {
                 "m_Node": {
@@ -221,49 +288,7 @@
             },
             "m_InputSlot": {
                 "m_Node": {
-                    "m_Id": "49a71bd8477f463499013e2a5836f709"
-                },
-                "m_SlotId": 0
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "374f3fae7d46483aa45b887bac71de36"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "7e409f490fe64bd08da3cd49cab24d2d"
-                },
-                "m_SlotId": 0
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "374f3fae7d46483aa45b887bac71de36"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "a3ae46735644488e8659252b93f5ef52"
-                },
-                "m_SlotId": 0
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "374f3fae7d46483aa45b887bac71de36"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "ed27f8779d174d6585fd93d9f62287ff"
+                    "m_Id": "02a0b0e5cdfd4393aa1eb66d77c5003f"
                 },
                 "m_SlotId": 0
             }
@@ -888,6 +913,42 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.RedirectNodeData",
+    "m_ObjectId": "02a0b0e5cdfd4393aa1eb66d77c5003f",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Redirect Node",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -1002.0,
+            "y": 487.0,
+            "width": 56.00006103515625,
+            "height": 24.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "b73195d18f994e148c549c2589e95423"
+        },
+        {
+            "m_Id": "66db2de9fc274ead82cb526fe072e3d2"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "068c3969ffe347de8bc84fb3851440e2",
     "m_Id": 0,
@@ -1472,6 +1533,17 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.GroupData",
+    "m_ObjectId": "340996a9b62348b9bc0f64eced5bb157",
+    "m_Title": "Sample the Light Texture (Urp 2D)",
+    "m_Position": {
+        "x": -1646.509765625,
+        "y": 269.9999084472656
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicValueMaterialSlot",
     "m_ObjectId": "341ad80a08724449a7e1786aa986b83c",
     "m_Id": 2,
@@ -1570,17 +1642,17 @@
     "m_Type": "UnityEditor.ShaderGraph.SampleTexture2DNode",
     "m_ObjectId": "374f3fae7d46483aa45b887bac71de36",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "340996a9b62348b9bc0f64eced5bb157"
     },
     "m_Name": "Sample Texture 2D",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1472.0,
+            "x": -1449.0,
             "y": 442.0000305175781,
             "width": 208.0,
-            "height": 434.9999084472656
+            "height": 434.9999694824219
         }
     },
     "m_Slots": [
@@ -2454,6 +2526,30 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
+    "m_ObjectId": "66db2de9fc274ead82cb526fe072e3d2",
+    "m_Id": 1,
+    "m_DisplayName": "",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.OneMinusNode",
     "m_ObjectId": "695bcaa9ac7c4f30b5863f2c39cddb57",
     "m_Group": {
@@ -3226,17 +3322,17 @@
     "m_Type": "UnityEngine.Experimental.Rendering.Universal.LightTextureNode",
     "m_ObjectId": "8f03c4df2fdf46108a747dc9eba567a9",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "340996a9b62348b9bc0f64eced5bb157"
     },
     "m_Name": "2D Light Texture",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1639.0,
-            "y": 444.0000305175781,
+            "x": -1622.0,
+            "y": 329.0,
             "width": 145.0,
-            "height": 111.99996948242188
+            "height": 112.0
         }
     },
     "m_Slots": [
@@ -3933,6 +4029,30 @@
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
+    "m_ObjectId": "b73195d18f994e148c549c2589e95423",
+    "m_Id": 0,
+    "m_DisplayName": "",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "",
     "m_StageCapability": 3,
     "m_Value": {
         "x": 0.0,
@@ -5007,6 +5127,26 @@
         "e31": 0.0,
         "e32": 0.0,
         "e33": 1.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "ea600296d5554286a88c346071d4bd08",
+    "m_Title": "Note",
+    "m_Content": "Overrite the \nlight input to implement a custom lighting",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1177.0,
+        "y": 365.0,
+        "width": 200.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": ""
     }
 }
 
