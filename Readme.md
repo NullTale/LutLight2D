@@ -68,8 +68,10 @@ After the gradients are set, need to press the Bake button to apply the result i
 <sup>Result with the character sprite in the [lospec500](https://lospec.com/palette-list/lospec500) palette.</sup><br>
 <img src="https://user-images.githubusercontent.com/1497430/230003982-d3a49fcd-8b62-44d3-b6b8-feb16b60d7d7.png" width="600"><br>
 
-> The Ramps file is a common .png which contains shading gradient for each color from the palette, starting from the original, lightest, to the darkest.<br>
+The Ramps file is a common .png which contains shading gradient for each color from the palette, starting from the original, lightest, to the darkest.<br>
 > Colors also can have alpha channel.
+
+<img src="https://github.com/NullTale/LutLight2D/assets/1497430/6311a672-8e0c-418d-9c42-5328af745f84" width="450"><br>
 
 Now the character shaded with black color from the palette, and his light areas like eyes and face are visible in the shadows.<br>
 By changing the Color Ramps, unusual materials can be made that are only visible in shadow or light, as in the [example](#elospec500) for the lospec500 palette.<br>
