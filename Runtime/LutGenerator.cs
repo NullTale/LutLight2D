@@ -31,7 +31,7 @@ namespace LutLight2D
         [Tooltip("Number of gradient ramps, if disabled will be taken from the texture width." +
                  " It might be helpful to edit gradient ramps in one file with art from which they are taken. (width) ")]
         public Optional<int>   _rampsCount = new Optional<int>(false, 21);
-        
+
         [Header("Advanced")]
         [Tooltip("Size of the lut table, can be increased if have color indexing problems." +
                  " In case the palette has colors that are close to each other.")]
@@ -44,7 +44,7 @@ namespace LutLight2D
         public Gamma           _gamma = Gamma.rec601;
         [HideInInspector] [Tooltip("Blur radius in pixels.")]
         public Optional<float> _blur = new Optional<float>(false, 1);
-        
+
         [Tooltip("Save indexed lut texture for debugging purposes, which is used as a mask to overwrite colors from the lut table.")]
         public bool           _saveIndexedLut;
         [HideInInspector]
@@ -88,37 +88,38 @@ namespace LutLight2D
             rec2100,
             average,
         }
-        
+
         // =======================================================================
         public void GenerateIndex()
         {
             _lutIndexed = _getLut().Copy();
-            
+
             var lut       = _lutIndexed.GetPixels();
             var colors    = new List<Color>();
             var gradsSize = new Vector2Int(_rampsCount.GetValue(_ramps.width), _rampsDepth.GetValue(_ramps.height));
-            
+
             var gradient = _ramps.GetPixels(0, _ramps.height - gradsSize.y, gradsSize.x, gradsSize.y, 0).ToArray2D(gradsSize.x, gradsSize.y);
             for (var x = 0; x < gradient.GetLength(0); x++)
             {
                 var grade = gradient.GetColumn(x).Reverse().ToArray();
                 var color = grade.First();
-                
+
                 colors.Add(color);
             }
 
-            // grade colors from lut to palette by rgb 
+            // grade colors from lut to palette by rgb
             var pixels = lut.Select(lutColor => colors.Select(gradeColor => (grade: compare(lutColor, gradeColor), color: gradeColor)).OrderBy(n => n.grade).First())
                             .Select(n => n.color)
                             .ToArray();
-            
+
             _lutIndexed.SetPixels(pixels);
             _lutIndexed.Apply();
-            
+
 #if UNITY_EDITOR
             if (_saveIndexedLut)
             {
-                var path = $"{Path.GetDirectoryName(UnityEditor.AssetDatabase.GetAssetPath(this))}\\{name} Indexed.png";
+                var separator = Path.DirectorySeparatorChar;
+                var path = $"{Path.GetDirectoryName(UnityEditor.AssetDatabase.GetAssetPath(this))}{slash}{name} Indexed.png";
                 File.WriteAllBytes(path, _lutIndexed.EncodeToPNG());
                 UnityEditor.AssetDatabase.ImportAsset(path, UnityEditor.ImportAssetOptions.ForceUpdate);
                 _setImportOptions(UnityEditor.AssetDatabase.LoadAssetAtPath<Texture2D>(path), true);
@@ -139,7 +140,7 @@ namespace LutLight2D
                 };
 
                 var c = a.ToVector3().Mul(weight) - b.ToVector3().Mul(weight);
-                
+
                 return c.magnitude;
             }
         }
@@ -147,25 +148,25 @@ namespace LutLight2D
         private void OnValidate()
         {
             _setupMaterial();
-            
+
 #if UNITY_EDITOR
             // take grads path for auto import, set the label of a gradient texture
             if (_ramps != null)
             {
                 _gradsPath = UnityEditor.AssetDatabase.GetAssetPath(_ramps);
-                
+
                 _addLabel(_ramps, k_GradsLabel);
-                
+
                 _gradsLink = _ramps;
             }
-            
+
             // clear path, remove label
             if (_ramps == null)
             {
                 _gradsPath = string.Empty;
-                
+
                 _removeLabel(_gradsLink, k_GradsLabel);
-                
+
                 _gradsLink = null;
             }
 
@@ -173,33 +174,33 @@ namespace LutLight2D
             async void _addLabel(Object obj, string lable)
             {
                 await Task.Yield();
-                
+
                 if (obj == null)
                     return;
-                
+
                 var labels = UnityEditor.AssetDatabase.GetLabels(obj);
                 if (labels.Contains(lable))
                     return;
-                
+
                 UnityEditor.AssetDatabase.SetLabels(_ramps, labels.Append(lable).ToArray());
             }
-            
+
             async void _removeLabel(Object obj, string label)
             {
                 await Task.Yield();
-                
+
                 if (obj == null)
                     return;
-                
+
                 var labels = UnityEditor.AssetDatabase.GetLabels(obj);
                 if (labels.Contains(label) == false)
-                    return; 
-                
+                    return;
+
                 UnityEditor.AssetDatabase.SetLabels(obj, labels.Except(new []{label}).ToArray());
             }
 #endif
         }
-        
+
         public void Bake()
         {
             if (_ramps == null)
@@ -207,9 +208,9 @@ namespace LutLight2D
                 Debug.LogError($"{name} Can't bake lut, gradients is not set", this);
                 return;
             }
-                
+
             GenerateIndex();
-            
+
             var lutSize   = _getLutSize();
             var width     = lutSize * lutSize;
             var height    = lutSize;
@@ -217,17 +218,17 @@ namespace LutLight2D
             var grades    = new List<Grade>();
             var gradsSize = new Vector2Int(_rampsCount.GetValue(_ramps.width), _rampsDepth.GetValue(_ramps.height - (_indexed ? 1 : 0)) + (_indexed ? 1 : 0));
             var tex       = new Texture2D(width, height * _rampsDepth.GetValue(_ramps.height - (_indexed ? 1 : 0)), TextureFormat.RGBA32, false, false);
-            
+
             // collect shapes
             var gradient = _ramps.GetPixels(0, _ramps.height - gradsSize.y, gradsSize.x, gradsSize.y, 0).ToArray2D(gradsSize.x, gradsSize.y);
             for (var x = 0; x < gradient.GetLength(0); x++)
             {
                 var grade = gradient.GetColumn(x).Reverse().ToArray();
                 var shape = _colorShape(grade.First()).ToArray();
-                
+
                 grades.Add(new Grade(grade, shape));
             }
-            
+
             // draw gradient luts
             var pixels = new Color[tex.width, tex.height];
             for (var row = 0; row < gradsSize.y + (_indexed ? -1 : 0); row++)
@@ -244,7 +245,7 @@ namespace LutLight2D
                     }
                 }
             }
-            
+
             // blur pixels
             if (_blur.enabled)
             {
@@ -254,7 +255,7 @@ namespace LutLight2D
                 {
                     sampled[x, y] = _softSample(x, y);
                 }
-                
+
                 pixels = sampled;
 
                 // -----------------------------------------------------------------------
@@ -262,18 +263,18 @@ namespace LutLight2D
                 {
                     if (x.InRange(0, lutSize - 1) == false || y.InRange(0, lutSize - 1) == false || z.InRange(0, lutSize - 1) == false)
                         return fallback;
-                    
+
                     return graded - _lutAt(x, y, z);
                 }
-                
+
                 Color _softSample(int x, int y)
                 {
                     var radius = _blur.value.CeilToInt();
                     var (xBase, yBase, zBase) = _to3D(x, y % lutSize);
-                    
+
                     var impact = Color.clear;
                     var totalWeight = 0f;
-                    
+
                     // 3d sphere sample
                     for (var x3d = -radius + xBase; x3d <= radius + xBase; x3d++)
                     for (var y3d = -radius + yBase; y3d <= radius + yBase; y3d++)
@@ -283,7 +284,7 @@ namespace LutLight2D
                         if (weight <= 0f)
                             continue;
                         totalWeight += weight;
-                        
+
                         var (x2d, y2d) =  _to2D(x3d, y3d, z3d);
                         y2d            += (y / (float)lutSize).FloorToInt() * lutSize;
                         if (pixels.InBounds(x2d, y2d) == false)
@@ -291,34 +292,35 @@ namespace LutLight2D
                             impact += (pixels[x, y] - _lutAt(x, y % lutSize)) * weight;
                             continue;
                         }
-                        
+
                         impact += ImpactAt(x3d, y3d, z3d, pixels[x2d, y2d], pixels[x, y] - _lutAt(x, y % lutSize)) * weight;
                     }
-                    
+
                     return _lutAt(x, y % lutSize) + impact / totalWeight;
                 }
             }
-            
+
             // lerp against initial lut
             if (_weight != 1f)
             {
                 var lerp = _weight;
-                
+
                 for (var x = 0; x < tex.width; x++)
                 for (var y = 0; y < tex.height; y++)
-                    pixels[x, y] = Color.Lerp(_lutAt(x, y % lutSize), pixels[x,y ], lerp); 
+                    pixels[x, y] = Color.Lerp(_lutAt(x, y % lutSize), pixels[x,y ], lerp);
             }
-            
-            
+
+
             tex.SetPixels(pixels.ToArray());
             tex.Apply();
-            
+
 #if UNITY_EDITOR
-            var path = $"{Path.GetDirectoryName(UnityEditor.AssetDatabase.GetAssetPath(this))}\\{name}.png";
+            var slash = Path.DirectorySeparatorChar;
+            var path = $"{Path.GetDirectoryName(UnityEditor.AssetDatabase.GetAssetPath(this))}{slash}{name}.png";
             File.WriteAllBytes(path, tex.EncodeToPNG());
 
             UnityEditor.AssetDatabase.ImportAsset(path, UnityEditor.ImportAssetOptions.ForceUpdate);
-            _lutGenerated = UnityEditor.AssetDatabase.LoadAssetAtPath<Texture2D>(path); 
+            _lutGenerated = UnityEditor.AssetDatabase.LoadAssetAtPath<Texture2D>(path);
             _setImportOptions(_lutGenerated, false);
 #endif
             _setupMaterial();
@@ -334,23 +336,23 @@ namespace LutLight2D
                 }
             }
         }
-        
+
         // =======================================================================
         internal async void _setupMaterial()
         {
             if (_material.TryGetValue(out var mat) == false || mat == null)
                 return;
-            
+
             mat.SetTexture("_Lut", _lutGenerated);
             mat.SetFloat("_Grades", _rampsDepth.GetValue(_ramps.height - (_indexed ? 1 : 0)));
             mat.SetInt("_LUT_SIZE", (int)_lutSize);
-            
+
 #if UNITY_EDITOR
             await Task.Yield();
             UnityEditor.AssetDatabase.ImportAsset(UnityEditor.AssetDatabase.GetAssetPath(_material.Value));
 #endif
         }
-        
+
         internal int _getLutSize()
         {
             return _lutSize switch
@@ -361,13 +363,13 @@ namespace LutLight2D
                 _           => throw new ArgumentOutOfRangeException()
             };
         }
-        
+
         internal Texture2D _getLut()
         {
             var lutSize = _getLutSize();
             if (_lut != null && _lut.height == lutSize)
                 return _lut;
-            
+
             _lut            = new Texture2D(lutSize * lutSize, lutSize, TextureFormat.RGBA32, 0, false);
             _lut.filterMode = FilterMode.Point;
 
@@ -376,36 +378,36 @@ namespace LutLight2D
                 {
                     _lut.SetPixel(x, y, _lutAt(x, y));
                 }
-            
+
             _lut.Apply();
-            
+
             return _lut;
         }
-        
+
         private Color _lutAt(int x, int y)
         {
             var lutSize = _getLutSize();
             return new Color((x % lutSize) / (lutSize - 1f), y / (lutSize - 1f), (x / (float)lutSize).FloorToInt() * (1f / (lutSize - 1f)), 1f);
         }
-        
+
         private (int x, int y, int z) _to3D(int x, int y)
         {
             var lutSize = _getLutSize();
             return (x % lutSize, y, (x / (float)lutSize).FloorToInt());
         }
-        
+
         private (int x, int y) _to2D(int x, int y, int z)
         {
             var lutSize = _getLutSize();
             return (x + z * lutSize, y);
         }
-        
+
         private Color _lutAt(int x, int y, int z)
         {
             var lutSize = _getLutSize();
             return new Color(x / (lutSize - 1f), y / (lutSize - 1f), z / (lutSize - 1f), 1f);
         }
-        
+
 #if UNITY_EDITOR
         public static void _setImportOptions(Texture2D tex, bool readable, bool import = true)
         {
@@ -421,12 +423,12 @@ namespace LutLight2D
             importer.isReadable          = readable;
             importer.mipmapEnabled       = false;
             importer.npotScale           = UnityEditor.TextureImporterNPOTScale.None;
-            
+
             var texset = importer.GetDefaultPlatformTextureSettings();
             texset.format              = UnityEditor.TextureImporterFormat.RGBA32;
             texset.crunchedCompression = false;
             importer.SetPlatformTextureSettings(texset);
-            
+
             if (import)
                 UnityEditor.AssetDatabase.ImportAsset(path, UnityEditor.ImportAssetOptions.ForceUpdate);
         }
