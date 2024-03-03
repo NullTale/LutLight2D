@@ -118,7 +118,7 @@ namespace LutLight2D
 #if UNITY_EDITOR
             if (_saveIndexedLut)
             {
-                var separator = Path.DirectorySeparatorChar;
+                var slash = Path.DirectorySeparatorChar;
                 var path = $"{Path.GetDirectoryName(UnityEditor.AssetDatabase.GetAssetPath(this))}{slash}{name} Indexed.png";
                 File.WriteAllBytes(path, _lutIndexed.EncodeToPNG());
                 UnityEditor.AssetDatabase.ImportAsset(path, UnityEditor.ImportAssetOptions.ForceUpdate);
