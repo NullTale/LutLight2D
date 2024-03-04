@@ -8,9 +8,11 @@ Stylized pixel art lighting via color replacement.<br>
 It keeps the original colors of the palette and can create unusual stylization effects.
 
 Tested with Unity 2021, 2022, uses Urp 2D Renderer and Shader Graph.
- 
+
 [![Asset Store](https://img.shields.io/badge/Asset%20Store-asd?logo=Unity&color=red)](https://assetstore.unity.com/packages/tools/particles-effects/lutlight2d-267033)
 [![Forum](https://img.shields.io/badge/Forum-asd?logo=ChatBot&color=blue)](https://forum.unity.com/threads/1542449/)
+[![Aseprite Extension](https://img.shields.io/badge/Aseprite%20Plugin-asd?logo=Aseprite&color=white)](https://github.com/zacholade/lut-light-aseprite-extension)
+> Thanks to [Zacholade](https://github.com/zacholade) for Aseprite [Extension](https://github.com/zacholade/lut-light-aseprite-extension) to preview changes in the editor
 
 <img src="https://user-images.githubusercontent.com/1497430/229509448-da8a1939-4371-4938-8e6c-642c95c71697.gif" width="600"><br>
 
@@ -46,13 +48,14 @@ By specify color ramps and using material options, effects as in the [examples](
 
 ## Installation and use
 
-The Shader uses the lighting texture from the `Urp 2D Renderer` so `Urp Asset` must be configured.
-
-Install via PackageManager `https://github.com/NullTale/LutLight2D.git`
+Install via Unity [PackageManager](https://docs.unity3d.com/Manual/upm-ui-giturl.html)<br>
+```
+https://github.com/NullTale/LutLight2D.git
+```
 
 <img src="https://user-images.githubusercontent.com/1497430/213906801-7cab3334-5626-46b8-9966-d5c0b6107edc.png">
 
-
+> Bu default the Shader uses the lighting texture from the `Urp 2D Renderer` so `Urp Asset` must be configured.
 
 First needed to create the `LutLight2D Asset`, it will generate a texture with a set of lut tables for the material.
 
