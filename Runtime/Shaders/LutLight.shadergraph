@@ -654,7 +654,7 @@
                 "m_Node": {
                     "m_Id": "51c6e11ee8b944d39badaa2b0f00ed3f"
                 },
-                "m_SlotId": 3
+                "m_SlotId": 2
             }
         },
         {
@@ -2112,7 +2112,7 @@
     "m_Group": {
         "m_Id": ""
     },
-    "m_Name": "Lum Grading",
+    "m_Name": "Grading",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
@@ -2128,7 +2128,7 @@
             "m_Id": "cf6b6611d1a6451c8073179f41c8e247"
         },
         {
-            "m_Id": "be5c0af33fc64e509de3827137a3e3bb"
+            "m_Id": "6f9da9c3bc614865b80bc399d9563cb8"
         },
         {
             "m_Id": "aac02448907b4bf8a469c01957c1ded3"
@@ -2729,6 +2729,30 @@
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
+    "m_ObjectId": "6f9da9c3bc614865b80bc399d9563cb8",
+    "m_Id": 2,
+    "m_DisplayName": "Chroma",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "CHROMA",
     "m_StageCapability": 3,
     "m_Value": {
         "x": 0.0,
@@ -4254,30 +4278,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
-    "m_ObjectId": "be5c0af33fc64e509de3827137a3e3bb",
-    "m_Id": 3,
-    "m_DisplayName": "Max",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "MAX",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    }
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
     "m_ObjectId": "befbffc699d041fc9ef011274b913529",
     "m_Id": 0,
@@ -4626,10 +4626,10 @@
     "m_Guid": {
         "m_GuidSerialized": "435a9866-3b80-4250-b0d2-6bafe1eb24dc"
     },
-    "m_Name": "Lum Grading",
+    "m_Name": "Grading",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Lum Grading",
-    "m_DefaultReferenceName": "_LUM_GRADING",
+    "m_RefNameGeneratedByDisplayName": "Grading",
+    "m_DefaultReferenceName": "_GRADING",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -4641,9 +4641,9 @@
     "m_KeywordStages": 63,
     "m_Entries": [
         {
-            "id": 3,
-            "displayName": "Max",
-            "referenceName": "MAX"
+            "id": 2,
+            "displayName": "Chroma",
+            "referenceName": "CHROMA"
         },
         {
             "id": 4,
