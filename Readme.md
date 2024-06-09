@@ -16,6 +16,7 @@ Tested with Unity 2021, 2022, uses Urp 2D Renderer and Shader Graph.
 > Thanks to [Zacholade](https://github.com/zacholade) for Aseprite [Extension](https://github.com/zacholade/lut-light-aseprite-extension) to preview changes in the editor
 --->
 
+![_cover](https://github.com/NullTale/LutLight2D/assets/1497430/c3299c78-109b-4b26-b995-98030f6e8682)<br>
 <img src="https://user-images.githubusercontent.com/1497430/229509448-da8a1939-4371-4938-8e6c-642c95c71697.gif" width="600"><br>
 
 ## Examples
