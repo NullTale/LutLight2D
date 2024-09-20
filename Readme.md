@@ -7,6 +7,8 @@
 Stylized pixel art lighting via color replacement.<br>
 It keeps the original colors of the palette and can create unusual stylization effects.
 
+Web Demo https://nulltale.itch.io/dungeon-tale
+
 Tested with Unity 2021, 2022, uses Urp 2D Renderer and Shader Graph.
 
 [![Asset Store](https://img.shields.io/badge/Asset%20Store-asd?logo=Unity&color=red)](https://assetstore.unity.com/packages/tools/particles-effects/lutlight2d-267033)
