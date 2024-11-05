@@ -1,15 +1,16 @@
 # LutLight2D
-
+Dev by NullTale - author's games, materials, graphics <br>
+[![Itch](https://img.shields.io/badge/Itch-Itch?logo=Itch.io&color=white)](https://nulltale.itch.io)
 [![Twitter](https://img.shields.io/badge/Twitter-Twitter?logo=X&color=red)](https://twitter.com/NullTale)
 [![Discord](https://img.shields.io/badge/Discord-Discord?logo=discord&color=white)](https://discord.gg/CkdQvtA5un)
-[![Boosty](https://img.shields.io/badge/Support-Boosty?logo=boosty&color=white)](https://boosty.to/nulltale/donate)
+[![Boosty](https://img.shields.io/badge/Support-Boosty?logo=boosty&color=blue)](https://boosty.to/nulltale/donate)
 
-Stylized pixel art lighting via color replacement.<br>
+• Stylized pixel art lighting via color replacement.<br>
 It keeps the original colors of the palette and can create unusual stylization effects.
 
-Web Demo https://nulltale.itch.io/dungeon-tale
+• Web Demo https://nulltale.itch.io/dungeon-tale
 
-Tested with Unity 2021, 2022, uses Urp 2D Renderer and Shader Graph.
+• Tested with Unity 2021, 2022, uses Urp 2D Renderer and Shader Graph.
 
 [![Asset Store](https://img.shields.io/badge/Asset%20Store-asd?logo=Unity&color=red)](https://assetstore.unity.com/packages/tools/particles-effects/lutlight2d-267033)
 [![Forum](https://img.shields.io/badge/Forum-asd?logo=ChatBot&color=blue)](https://forum.unity.com/threads/1542449/)
