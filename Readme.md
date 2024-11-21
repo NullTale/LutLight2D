@@ -86,3 +86,13 @@ Now the character shaded with black color from the palette, and his light areas 
 By changing the Color Ramps, unusual materials can be made that are only visible in shadow or light, as in the [example](#elospec500) for the lospec500 palette.<br>
 
 > Examples with other applications can be found in the package samples.
+
+---
+## Misc
+
+Unfinished, NOT Documentated [![Aseprite Extension](https://img.shields.io/badge/Aseprite%20Extension-asd?logo=Aseprite&color=white)](https://github.com/zacholade/lut-light-aseprite-extension) 
+from [Zacholade](https://github.com/zacholade) to preview changes in the editor
+
+> people who are not indifferent, please give him Issues to stimulate a development
+
+https://github.com/user-attachments/assets/080b548b-ecef-4cc9-9d1b-7f65afb992bf
