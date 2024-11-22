@@ -99,7 +99,7 @@ Though simplified and developed in the direction of PixelArt, the Asset itself i
 • Below is a semi-entertaining video about choosing colors using gradients and different ways of transitioning through the color wheel, one of which was inspired by this approuch.<br>
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/OdoW9qgwPf4/0.jpg)](https://youtu.be/OdoW9qgwPf4?t=38 "Video Title")
 
-• Math video about Phong Lighting, basically, not very good linear gradient from white to black(grayscale) that was applied as multiplyer over the main image.<br>
+• Math video about Phong Lighting in contrast with previous one, basically, not very good linear gradient from white to black that was applied as multiplyer over the main image. (common approuch in lighting)<br>
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/LKXAIuCaKAQ/0.jpg)](https://www.youtube.com/watch?v=LKXAIuCaKAQ "Video Title")
 
 ### • Zacholade !
