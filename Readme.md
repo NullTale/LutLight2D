@@ -22,7 +22,7 @@ It keeps the original colors of the palette and can create unusual stylization e
 ![_cover](https://github.com/NullTale/LutLight2D/assets/1497430/871a332c-0cec-4811-93d5-d8a804525d02)<br>
 <img src="https://user-images.githubusercontent.com/1497430/229509448-da8a1939-4371-4938-8e6c-642c95c71697.gif" width="600"><br>
 
-## Examples
+## • Examples
 
 <sub>Pattern shading [Oil6](https://lospec.com/palette-list/oil-6)</sub><br>
 <img src="https://user-images.githubusercontent.com/1497430/229741056-ee26e56c-57c0-42fe-89e5-db16ba03ff0e.gif" width="600"><br>
@@ -36,7 +36,7 @@ It keeps the original colors of the palette and can create unusual stylization e
 <sub>In shadow outline [FUZZYFOUR](https://lospec.com/palette-list/fuzzyfour)</sub><br>
 <img src="https://user-images.githubusercontent.com/1497430/229741007-9052d285-5bcf-4a07-8e24-f1fbef4aea79.gif" width="600"><br>
 
-## How it works
+## • How it works
 The general idea is to make each color have its own shading gradient defined manually<br>
 like it is done in most pixel art palettes.
 
@@ -52,7 +52,7 @@ By specify color ramps and using material options, effects as in the [examples](
 
 <img src="https://user-images.githubusercontent.com/1497430/229517322-98e91e47-0c54-47f0-8f0a-a10487153583.png" width="500"><br>
 
-## Installation and use
+## • Installation and use
 
 Install via Unity [PackageManager](https://docs.unity3d.com/Manual/upm-ui-giturl.html)<br>
 ```
@@ -89,6 +89,16 @@ By changing the Color Ramps, unusual materials can be made that are only visible
 
 ---
 ## Misc
+
+### • What this really is?
+
+The name Pixel Art lighting is chosen for clickbait and to get search engine traffic.<br>
+In general the system and approach itself is something more, it is an artistic lighting with dynamic gradients through light replacement that can be used much more flexibly in both 2D and 3D to express artistic practices in real time.<br>
+Though simplified and developed in the direction of PixelArt, the Asset itself is inspired by materials on working with color from painting and applied to artistic purposes.
+
+https://www.youtube.com/watch?v=OdoW9qgwPf4
+
+### • Zacholade 
 
 Unfinished, NOT Documentated [![Aseprite Extension](https://img.shields.io/badge/Aseprite%20Extension-asd?logo=Aseprite&color=white)](https://github.com/zacholade/lut-light-aseprite-extension) 
 from [Zacholade](https://github.com/zacholade) to preview changes in the editor
