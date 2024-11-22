@@ -90,15 +90,19 @@ By changing the Color Ramps, unusual materials can be made that are only visible
 ---
 ## Misc
 
-### • What this really is?
+### • What this really is ?
 
 The name Pixel Art lighting is chosen for clickbait and to get search engine traffic.<br>
-In general the system and approach itself is something more, it is an artistic lighting with dynamic gradients through light replacement that can be used much more flexibly in both 2D and 3D to express artistic practices in real time.<br>
+In general the system and approach itself is something more, it is an artistic lighting with dynamic gradients through color replacement that can be used much more flexibly in both 2D and 3D to express artistic practices in real time.<br>
 Though simplified and developed in the direction of PixelArt, the Asset itself is inspired by materials on working with color from painting and applied to artistic purposes.
 
-https://www.youtube.com/watch?v=OdoW9qgwPf4
+• Below is a semi-entertaining video about choosing colors using gradients and different ways of transitioning through the color wheel, one of which was inspired by this approuch.<br>
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/OdoW9qgwPf4/0.jpg)](https://youtu.be/OdoW9qgwPf4?t=38 "Video Title")
 
-### • Zacholade 
+• Math video about Phong Lighting, basically, not very good linear gradient from white to black(grayscale) that was applied as multiplyer over the main image.<br>
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/LKXAIuCaKAQ/0.jpg)](https://www.youtube.com/watch?v=LKXAIuCaKAQ "Video Title")
+
+### • Zacholade !
 
 Unfinished, NOT Documentated [![Aseprite Extension](https://img.shields.io/badge/Aseprite%20Extension-asd?logo=Aseprite&color=white)](https://github.com/zacholade/lut-light-aseprite-extension) 
 from [Zacholade](https://github.com/zacholade) to preview changes in the editor
