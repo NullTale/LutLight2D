@@ -105,7 +105,8 @@ Though simplified and developed in the direction of PixelArt, the Asset itself i
 ### • Zacholade !
 
 Unfinished, NOT Documentated [![Aseprite Extension](https://img.shields.io/badge/Aseprite%20Extension-asd?logo=Aseprite&color=white)](https://github.com/zacholade/lut-light-aseprite-extension) 
-from [Zacholade](https://github.com/zacholade) to preview changes in the editor
+from [Zacholade](https://github.com/zacholade) to preview changes in the editor<br>
+(originally was added in to the description but later removed because of it's state (that was allowed by it's autor!!))
 
 > people who are not indifferent, please give him Issues to stimulate a development
 
