@@ -5,8 +5,9 @@ Dev by NullTale<br>
 [![Discord](https://img.shields.io/badge/Discord-Discord?logo=discord&color=white)](https://discord.gg/CkdQvtA5un)
 [![Boosty](https://img.shields.io/badge/Support-Boosty?logo=boosty&color=white)](https://boosty.to/nulltale/donate)
 
-• Stylized pixel art lighting via color replacement.<br>
-It keeps the original colors of the palette and can create unusual stylization effects.
+• True Pixel Art lighting that has no analogies, via color replacement.<br>
+It implements gradient shading using colors of the palette <br>
+and expand lighting application for "toonish" stilyilzation, custom material behaviour and more . ˚ . ✦
 
 • Web Demo https://nulltale.itch.io/dungeon-tale
 
