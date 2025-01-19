@@ -5,6 +5,8 @@ Dev by NullTale<br>
 [![Discord](https://img.shields.io/badge/Discord-Discord?logo=discord&color=white)](https://discord.gg/CkdQvtA5un)
 [![Boosty](https://img.shields.io/badge/Support-Boosty?logo=boosty&color=white)](https://boosty.to/nulltale/donate)
 
+** Just a Unique lighting system that has no analogies ¯\\(ツ)/¯
+
 • Stylized pixel art lighting via color replacement.<br>
 It keeps the original colors of the palette and can create unusual stylization effects.
 
