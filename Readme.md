@@ -2,8 +2,9 @@
 Dev by NullTale<br>
 [![Itch](https://img.shields.io/badge/Web-Itch?logo=Itch.io&color=white)](https://nulltale.itch.io)
 [![Twitter](https://img.shields.io/badge/Twitter-Twitter?logo=X&color=red)](https://twitter.com/NullTale)
+[![Tg](https://img.shields.io/badge/Tg-Telegram?logo=telegram&color=white)](https://t.me/nulltalescape)
 [![Discord](https://img.shields.io/badge/Discord-Discord?logo=discord&color=white)](https://discord.gg/CkdQvtA5un)
-[![Boosty](https://img.shields.io/badge/Support-Boosty?logo=boosty&color=white)](https://boosty.to/nulltale/donate)
+[![Boosty](https://img.shields.io/badge/Boosty-Boosty?logo=boosty&color=white)](https://boosty.to/nulltale/donate)
 
 ** Just a Unique lighting system that has no analogies ¯\\(ツ)/¯
 
