@@ -1,13 +1,14 @@
 # LutLight2D
 Dev by NullTale<br>
-[![Itch](https://img.shields.io/badge/Web-Itch?logo=Itch.io&color=white)](https://nulltale.itch.io)
-[![Twitter](https://img.shields.io/badge/Twitter-Twitter?logo=X&color=red)](https://twitter.com/NullTale)
-[![Tg](https://img.shields.io/badge/Tg-Telegram?logo=telegram&color=white)](https://t.me/nulltalescape)
+[![Itch](https://img.shields.io/badge/Itch-Itch?logo=Itch.io&color=white)](https://nulltale.itch.io)
+[![Asset Store](https://img.shields.io/badge/Asset%20Store-asd?logo=Unity&color=blue)](https://assetstore.unity.com/packages/tools/particles-effects/lutlight2d-267033)
+[![Forum](https://img.shields.io/badge/Forum-asd?logo=ChatBot&color=blue)](https://forum.unity.com/threads/1542449/)
+
 <!---
 [![Discord](https://img.shields.io/badge/Discord-Discord?logo=discord&color=white)](https://discord.gg/CkdQvtA5un)
 [![Boosty](https://img.shields.io/badge/Boosty-Boosty?logo=boosty&color=white)](https://boosty.to/nulltale/donate)
 --->
-** Just a Unique lighting system that has no analogies ¯\\(ツ)/¯
+** Just a Unique lighting system via rolor replacement that has no analogies ¯\\(ツ)/¯
 
 • Stylized pixel art lighting via color replacement.<br>
 It keeps the original colors of the palette and can create unusual stylization effects.
@@ -16,8 +17,6 @@ It keeps the original colors of the palette and can create unusual stylization e
 
 • Tested with Unity 2021, 2022, uses Urp 2D Renderer and Shader Graph.
 
-[![Asset Store](https://img.shields.io/badge/Asset%20Store-asd?logo=Unity&color=red)](https://assetstore.unity.com/packages/tools/particles-effects/lutlight2d-267033)
-[![Forum](https://img.shields.io/badge/Forum-asd?logo=ChatBot&color=blue)](https://forum.unity.com/threads/1542449/)
 <!---
 ([![Aseprite Extension](https://img.shields.io/badge/Aseprite%20Plugin-asd?logo=Aseprite&color=white)](https://github.com/zacholade/lut-light-aseprite-extension))
 > Thanks to [Zacholade](https://github.com/zacholade) for Aseprite [Extension](https://github.com/zacholade/lut-light-aseprite-extension) to preview changes in the editor
